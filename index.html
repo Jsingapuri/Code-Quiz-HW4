@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>And so it begins</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <h1 class="navbar-brand" href="#">Are you smart enough?</h1S>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                Score <span id="score">0</span>
+              </li>
+              <li class="nav-item">
+                Time <span id="time">60</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="start-elements">
+        <button type="button" class="btn btn-primary">Start Quiz</button>
+        <a type="button" href="end.html" class=" btn btn-primary">High Scores</a>
+    </div>
+
+    <div class="quiz-elements hide">
+        questions go here
+    </div>
+
+    <form class="end-form-container hide">
+      <h2 id="end-text">Enter your initials below to save your score!</h2>
+      <input type="text" name="name" id="username" placeholder="Enter your initials">
+      <button class="Btn" id="saveScoreBtn" type="submit">save</button>
+  </form>
+
+</body>
+<script src="scripts.js"></script>
+</html>
